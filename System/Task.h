@@ -1,6 +1,8 @@
 #ifndef _TASK_H
 #define _TASK_H
 
+typedef void (*task_func)(void* param);
+
 void init_task_module(void);
 
 void create_task(task_func func, void* param, char* stack, uint32_t stack_sz);
