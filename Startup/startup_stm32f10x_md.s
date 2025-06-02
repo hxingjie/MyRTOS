@@ -197,9 +197,6 @@ My_TIM2_IRQHandler PROC
 				; SysTick_Handler 函数保证了 LR 未改变
 				BX R0 ; 被调用者保存 lr
 				ENDP
-                ;EXPORT  SysTick_Handler            [WEAK]
-                ;B       .
-                ;ENDP
 				
 ; Restore regs
 ; PROC 和 ENDP 是用于定义子程序（函数）的伪指令
